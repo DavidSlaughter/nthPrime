@@ -11,7 +11,7 @@ int getInteger()
     int x{};
     do
     {
-        std::cout << "\nEnter a positive integer: ";
+        std::cout << "\nEnter a positive integer less than 10,000: ";
         std::cin >> x;
         std::cin.ignore(3000, '\n');
     } while (x <= 0 || x > 9999);
@@ -127,7 +127,3 @@ void printMessage(int x)
 
     std::cout << "\n";
 }
-
-
-
-
